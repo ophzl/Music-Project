@@ -20,33 +20,33 @@ namespace Projet_ASP.NET.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index(string movieGenre, string searchString)
+        public async Task<IActionResult> Index(string musicGenre, string searchString)
         {
             // Use LINQ to get list of genres.
             IQueryable<string> genreQuery = from m in _context.Music
                                             orderby m.Genre
                                             select m.Genre;
 
-            var movies = from m in _context.Music
+            var musics = from m in _context.Music
                          select m;
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(s => s.Title.Contains(searchString));
+                musics = musics.Where(s => s.Title.Contains(searchString));
             }
 
-            if (!string.IsNullOrEmpty(movieGenre))
+            if (!string.IsNullOrEmpty(musicGenre))
             {
-                movies = movies.Where(x => x.Genre == movieGenre);
+                musics = musics.Where(x => x.Genre == musicGenre);
             }
 
-            var movieGenreVM = new MovieGenreViewModel
+            var musicGenreVM = new MusicGenreViewModel
             {
                 Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
-                Musics = await movies.ToListAsync()
+                Musics = await musics.ToListAsync()
             };
 
-            return View(movieGenreVM);
+            return View(musicGenreVM);
         }
 
         // GET: Musics/Details/5
@@ -78,7 +78,7 @@ namespace Projet_ASP.NET.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Music music)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Creator,IsValidated")] Music music)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +110,7 @@ namespace Projet_ASP.NET.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Music music)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,IsValidated")] Music music)
         {
             if (id != music.Id)
             {

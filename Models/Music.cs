@@ -26,9 +26,8 @@ namespace MvcMusic.Models
         [StringLength(30)]
         public string Genre { get; set; }
 
-        [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
-        [StringLength(5)]
-        [Required]
-        public string Rating { get; set; }
+        public string Creator { get; set; }
+        public Boolean IsValidated { get; set; }
+
     }
 }

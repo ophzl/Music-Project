@@ -36,14 +36,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.Musics[0].Price)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Musics[0].Rating)
-            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-       @foreach (var item in Model) {
+       @foreach (var item in Model.Musics) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
@@ -57,9 +54,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-            <th>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </th>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

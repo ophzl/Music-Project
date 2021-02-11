@@ -10,8 +10,8 @@ using MvcMusic.Data;
 namespace Projet_ASP.NET.Migrations
 {
     [DbContext(typeof(MvcMusicContext))]
-    [Migration("20210210115249_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210211143633_IsValidated")]
+    partial class IsValidated
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,8 +28,16 @@ namespace Projet_ASP.NET.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Genre")
+                    b.Property<string>("Creator")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Genre")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<bool>("IsValidated")
+                        .HasColumnType("bit");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -38,7 +46,9 @@ namespace Projet_ASP.NET.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
                     b.HasKey("Id");
 

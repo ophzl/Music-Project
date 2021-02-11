@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MvcMusic.Models
 {
-    public class MovieGenreViewModel
+    public class MusicGenreViewModel
     {
         public List<Music> Musics { get; set; }
         public SelectList Genres { get; set; }

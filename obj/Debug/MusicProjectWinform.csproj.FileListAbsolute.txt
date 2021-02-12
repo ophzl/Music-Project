@@ -1,0 +1,14 @@
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\bin\Debug\MusicProjectWinform.exe.config
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\bin\Debug\MusicProjectWinform.exe
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\bin\Debug\MusicProjectWinform.pdb
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.csprojAssemblyReference.cache
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.Form1.resources
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.Properties.Resources.resources
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.csproj.GenerateResource.cache
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.csproj.CoreCompileInputs.cache
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.exe
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.pdb
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\obj\Debug\MusicProjectWinform.csproj.CopyComplete
+C:\Users\ophel\OneDrive\Documents\CESI\Formation Analyste Programmeur\C#\MusicProjectWinform\bin\Debug\Json.Net.dll
